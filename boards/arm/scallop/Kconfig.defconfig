@@ -1,10 +1,10 @@
 # Copyright (c) 2021 Nick Winans
 # SPDX-License-Identifier: MIT
 
-if BOARD_VAN
+if BOARD_SCALLOP
 
 config ZMK_KEYBOARD_NAME
-	default "van"
+	default "Scallop"
 
 if USB
 
@@ -28,4 +28,4 @@ config ZMK_USB
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
-endif # BOARD_VAN
+endif # BOARD_SCALLOP

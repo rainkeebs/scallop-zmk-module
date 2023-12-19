@@ -7,7 +7,7 @@
 1. You will need to [sign up for a GitHub account](https://github.com/signup), and [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) so you can edit it.
 2. Navigate to the **Actions** tab and click the "I understand my workflows, go ahead and run them" button to enable builds.
    ![Actions tab with "I understand my workflows" button](https://i.imgur.com/B7cTAE6.png)
-3. Edit the [config/van.conf](config/van.conf) to enable/disable features. Edit [config/van.keymap](config/van.keymap) to change the keymap. Lastly, make sure the [build.yaml](build.yaml) file has your board in the "boards" list.
+3. Edit the [config/scallop.conf](config/scallop.conf) to enable/disable features. Edit [config/scallop.keymap](config/scallop.keymap) to change the keymap. Lastly, make sure the [build.yaml](build.yaml) file has your board in the "boards" list.
 4. After committing your changes, your firmware will begin compiling. Assuming there are no typos or other problems, it will eventually be [downloadable from the Actions tab](https://zmk.dev/docs/user-setup#installing-the-firmware).
 5. [Flash the non-settings-reset firmware](https://zmk.dev/docs/user-setup#flashing-uf2-files).
 
@@ -36,7 +36,7 @@ manifest:
     path: config
 ```
 
-After making this change, add a copy of [the configuration file](config/van.conf) and [the keymap](config/van.keymap) to the `config` folder that is already in your repo.
+After making this change, add a copy of [the configuration file](config/scallop.conf) and [the keymap](config/scallop.keymap) to the `config` folder that is already in your repo.
 
 ## Common Questions/Problems
 

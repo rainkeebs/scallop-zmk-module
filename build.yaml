@@ -12,6 +12,6 @@
 #     shield: reviung41
 #
 include:
-    - board: van
-    - board: van
+    - board: scallop
+    - board: scallop
       shield: settings_reset

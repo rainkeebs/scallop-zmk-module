@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-	model = "van";
-	compatible = "van";
+	model = "scallop";
+	compatible = "scallop";
 
 	chosen {
 		zephyr,code-partition = &code_partition;

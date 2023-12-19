@@ -4,22 +4,17 @@
  * SPDX-License-Identifier: MIT
  */
 
+/*
+ * This is the default keymap. You probably shouldn't bother editing it. Changes won't be picked up from here.
+ * It exists to give you something to copy back into the config folder if your own keymap is too far gone to salvage.
+ */
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    behaviors {
-         bh: layer_taps
-        {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Layer-Tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <215>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,8 +27,8 @@
 // |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |  MO(1) |  CTL  |
 // ------------------------------------------------------------------------------------------
             bindings = <
-    &bh 2 ESC  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp DEL
-    &bh 1 TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp RET
+    &lt 2 ESC  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp DEL
+    &lt 1 TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp RET
     &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
     &kp LCTRL &trans &kp LALT             &kp SPACE                     &kp RGUI  &trans  &mo 3
             >;

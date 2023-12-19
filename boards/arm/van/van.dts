@@ -18,6 +18,7 @@
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan0;
 		zmk,matrix_transform = &default_transform;
+		zmk,battery = &vbatt;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -34,7 +35,6 @@ RC(3,0)       RC(3,1) RC(3,2)  RC(3,6)  RC(3,9) RC(3,10)    RC(3,11)
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
 
 		diode-direction = "row2col";
 		row-gpios
@@ -59,9 +59,8 @@ RC(3,0)       RC(3,1) RC(3,2)  RC(3,6)  RC(3,9) RC(3,10)    RC(3,11)
 			;
 	};
 
-	vbatt {
+	vbatt: vbatt {
 		compatible = "zmk,battery-voltage-divider";
-		label = "BATTERY";
 		io-channels = <&adc 7>;
 		output-ohms = <2000000>;
 		full-ohms = <(2000000 + 806000)>;

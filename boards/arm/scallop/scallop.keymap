@@ -60,8 +60,8 @@
 // ------------------------------------------------------------------------------------------------
             bindings = <
     &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans &trans
-    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12 &trans
-    &trans   &trans &trans  &trans  &trans  &trans  &trans &trans  &trans &trans &trans          &trans
+    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp trans  &kp trans &trans
+    &trans  &trans &trans  &trans  &trans  &trans  &trans &trans  &trans &trans &trans          &trans
     &trans &trans &trans             &trans                     &trans  &trans  &trans
             >;
         };

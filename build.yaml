@@ -13,5 +13,6 @@
 #
 include:
     - board: scallop
+      snippet: zmk-usb-logging
     - board: scallop
       shield: settings_reset

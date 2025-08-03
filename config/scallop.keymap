@@ -46,7 +46,7 @@
 
         bluetooth_layer {
             bindings = <
-    &trans &trans  &trans  &trans  &trans &trans &trans  &trans &trans  &trans  &trans  &trans
+    &trans &trans  &trans  &trans  &trans &trans &trans  &trans &trans  &trans  &trans  &trans &trans
     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans
     &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1  &trans  &trans  &trans  &trans &trans  &trans &trans &trans          &trans
     &bootloader &sys_reset &trans             &trans                     &trans  &trans  &trans &trans &trans &trans
